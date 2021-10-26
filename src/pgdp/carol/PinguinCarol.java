@@ -46,7 +46,7 @@ public class PinguinCarol {
                                 posX++;
                             } else {
                                 if (posX + 1 >= width) write("Carol cannot leave the field.");
-                                if (Math.abs(board[posX][posY] - board[posX + 1][posY]) > 1)
+                             else   if (Math.abs(board[posX][posY] - board[posX + 1][posY]) > 1)
                                     write("Carol cannot go to the next field because the difference in height is too great.");
                             }
                         } else if (dir == 1) {
@@ -54,7 +54,7 @@ public class PinguinCarol {
                                 posY++;
                             } else {
                                 if (posY + 1 >= height) write("Carol cannot leave the field.");
-                                if (Math.abs(board[posX][posY] - board[posX][posY + 1]) > 1)
+                             else   if (Math.abs(board[posX][posY] - board[posX][posY + 1]) > 1)
                                     write("Carol cannot go to the next field because the difference in height is too great.");
                             }
                         } else if (dir == 2) {
@@ -62,7 +62,7 @@ public class PinguinCarol {
                                 posX--;
                             } else {
                                 if (posX - 1 < 0) write("Carol cannot leave the field.");
-                                if (Math.abs(board[posX][posY] - board[posX - 1][posY]) > 1)
+                             else   if (Math.abs(board[posX][posY] - board[posX - 1][posY]) > 1)
                                     write("Carol cannot go to the next field because the difference in height is too great.");
                             }
 
@@ -71,7 +71,7 @@ public class PinguinCarol {
                                 posY--;
                             } else {
                                 if (posY - 1 < 0) write("Carol cannot leave the field.");
-                                if (Math.abs(board[posX][posY] - board[posX][posY - 1]) > 1)
+                              else  if (Math.abs(board[posX][posY] - board[posX][posY - 1]) > 1)
                                     write("Carol cannot go to the next field because the difference in height is too great.");
                             }
 
