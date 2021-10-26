@@ -14,11 +14,11 @@ public class PinguinCarol {
             int board[][] = new int[width][height];
             for (int i = 0; i < width; i++) {
                 for (int j = 0; j < height; j++) {
-                    board[i][j] = randomInt(i, j);
-                    writeConsole(randomInt(i, j) + " ");
+                    board[i][j] = randomInt(-1, 9);
+
 
                 }
-                write("");
+
             }
             int posX = readInt("Starting position x:");
             int posY = readInt("Starting position y:");
