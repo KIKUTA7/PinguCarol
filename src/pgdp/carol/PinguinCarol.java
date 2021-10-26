@@ -20,6 +20,7 @@ public class PinguinCarol {
                 }
 
             }
+            printPlayground(board);
             int posX = readInt("Starting position x:");
             int posY = readInt("Starting position y:");
             int dir = readInt("Direction of view at the beginning:");
@@ -175,7 +176,7 @@ public class PinguinCarol {
                                     write("Carol can't lay a block of ice, there are already ten blocks of ice on the field.");
                             }
                         }
-                    } else write("Unknown instruction!");
+                    } else if(inst != 'e') write("Unknown instruction!");
                 }
 
 
