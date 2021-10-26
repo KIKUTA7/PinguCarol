@@ -86,7 +86,7 @@ public class PinguinCarol {
                                     write("Carol can't take a block of ice, she's already carrying ten.");
                                 if (board[posX][posY] == -1) write("Carol cannot take blocks of ice in the water.");
                                 if (posX + 1 >= width) write("Carol cannot take blocks of ice off the field.");
-                                if (board[posX + 1][posY] <= -1)
+                            else    if (board[posX + 1][posY] <= -1)
                                     write("Carol can't take a block of ice, there aren't any left.");
                             }
                         } else if (dir == 1) {
@@ -98,7 +98,7 @@ public class PinguinCarol {
                                     write("Carol can't take a block of ice, she's already carrying ten.");
                                 if (board[posX][posY] == -1) write("Carol cannot take blocks of ice in the water.");
                                 if (posY + 1 >= height) write("Carol cannot take blocks of ice off the field.");
-                                if (board[posX][posY + 1] <= -1)
+                             else   if (board[posX][posY + 1] <= -1)
                                     write("Carol can't take a block of ice, there aren't any left.");
                             }
                         } else if (dir == 2) {
@@ -110,7 +110,7 @@ public class PinguinCarol {
                                     write("Carol can't take a block of ice, she's already carrying ten.");
                                 if (board[posX][posY] == -1) write("Carol cannot take blocks of ice in the water.");
                                 if (posX - 1 <= -1) write("Carol cannot take blocks of ice off the field.");
-                                if (board[posX - 1][posY] <= -1)
+                            else    if (board[posX - 1][posY] <= -1)
                                     write("Carol can't take a block of ice, there aren't any left.");
                             }
                         } else if (dir == 3) {
@@ -122,7 +122,7 @@ public class PinguinCarol {
                                     write("Carol can't take a block of ice, she's already carrying ten.");
                                 if (board[posX][posY] == -1) write("Carol cannot take blocks of ice in the water.");
                                 if (posY - 1 <= -1) write("Carol cannot take blocks of ice off the field.");
-                                if (board[posX][posY - 1] <= -1)
+                             else   if (board[posX][posY - 1] <= -1)
                                     write("Carol can't take a block of ice, there aren't any left.");
                             }
                         }
@@ -136,7 +136,7 @@ public class PinguinCarol {
                                     write("Carol can't lay a block of ice because she isn't carrying one.");
                                 if (board[posX][posY] == -1) write("Carol cannot lay blocks of ice in the water.");
                                 if (posX + 1 >= width) write("Carol cannot put blocks of ice off the field of play.");
-                                if (board[posX + 1][posY] >= 9)
+                             else   if (board[posX + 1][posY] >= 9)
                                     write("Carol can't lay a block of ice, there are already ten blocks of ice on the field.");
                             }
                         } else if (dir == 1) {
@@ -148,7 +148,7 @@ public class PinguinCarol {
                                     write("Carol can't lay a block of ice because she isn't carrying one.");
                                 if (board[posX][posY] == -1) write("Carol cannot lay blocks of ice in the water.");
                                 if (posY + 1 >= height) write("Carol cannot put blocks of ice off the field of play.");
-                                if (board[posX][posY + 1] >= 9)
+                            else    if (board[posX][posY + 1] >= 9)
                                     write("Carol can't lay a block of ice, there are already ten blocks of ice on the field.");
                             }
                         } else if (dir == 2) {
@@ -160,7 +160,7 @@ public class PinguinCarol {
                                     write("Carol can't lay a block of ice because she isn't carrying one.");
                                 if (board[posX][posY] == -1) write("Carol cannot lay blocks of ice in the water.");
                                 if (posX - 1 <= -1) write("Carol cannot put blocks of ice off the field of play.");
-                                if (board[posX - 1][posY] >= 9)
+                            else    if (board[posX - 1][posY] >= 9)
                                     write("Carol can't lay a block of ice, there are already ten blocks of ice on the field.");
                             }
                         } else if (dir == 3) {
@@ -172,7 +172,7 @@ public class PinguinCarol {
                                     write("Carol can't lay a block of ice because she isn't carrying one.");
                                 if (board[posX][posY] == -1) write("Carol cannot lay blocks of ice in the water.");
                                 if (posY - 1 <= -1) write("Carol cannot put blocks of ice off the field of play.");
-                                if (board[posX][posY - 1] >= 9)
+                              else  if (board[posX][posY - 1] >= 9)
                                     write("Carol can't lay a block of ice, there are already ten blocks of ice on the field.");
                             }
                         }
